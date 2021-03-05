@@ -4,7 +4,8 @@ import java.util.Date;
 import java.util.TimeZone;
 
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
+
 
 
 
@@ -77,12 +78,12 @@ public class AttualWheater {
 	
 	
 	
-	public void Setall(JSONObject obj) throws JSONException  {
+	public void Setall(JSONObject obj) {
 		this.setTimeUNIX((Long) obj.get("dt"));
 		this.setDate(Dataformatter());
 		this.setPression((Double)Double.parseDouble(obj.getString("pressure").toString()));
 	}
-	 public JSONObject formatter() throws JSONException {
+	 public JSONObject formatter() {
 		 JSONObject json=new JSONObject();
 		 json.put("city", this.city);
 		 json.put("timeUNIX", this.timeUNIX);
