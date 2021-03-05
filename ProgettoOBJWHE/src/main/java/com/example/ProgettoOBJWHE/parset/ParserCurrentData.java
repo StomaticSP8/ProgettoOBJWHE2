@@ -1,6 +1,6 @@
 package com.example.ProgettoOBJWHE.parset;
 
-import org.json.JSONException;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
