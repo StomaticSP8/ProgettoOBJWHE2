@@ -8,6 +8,7 @@ public class ProgettoObjwheApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProgettoObjwheApplication.class, args);
+		
 	}
 
 }
