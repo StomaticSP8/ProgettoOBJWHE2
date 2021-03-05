@@ -104,6 +104,11 @@ public class AttualWheater {
 		 
 		 return json;
 	 }
+	
+	/**
+	 * formatta una data a partire dal tempo UNIX 
+	 * @return dateFromTimeUnix
+	 */
 	 
 	 public String Dataformatter() {
 		 Date data=new Date(this.timeUNIX*1000L);
