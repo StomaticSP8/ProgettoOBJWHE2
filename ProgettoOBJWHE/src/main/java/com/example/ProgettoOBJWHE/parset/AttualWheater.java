@@ -77,7 +77,7 @@ public class AttualWheater {
 	
 	
 	
-	public void Setall(JSONObject obj) throws JSONException {
+	public void Setall(JSONObject obj) throws JSONException  {
 		this.setTimeUNIX((Long) obj.get("dt"));
 		this.setDate(Dataformatter());
 		this.setPression((Double)Double.parseDouble(obj.getString("pressure").toString()));
