@@ -1,7 +1,5 @@
 package com.example.ProgettoOBJWHE.parset;
 
-import java.io.FileNotFoundException;
-
 import org.json.JSONException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

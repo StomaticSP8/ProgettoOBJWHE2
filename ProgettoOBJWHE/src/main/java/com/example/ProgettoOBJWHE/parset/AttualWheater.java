@@ -76,12 +76,17 @@ public class AttualWheater {
 	
 	public void parsing() {}
 	
+	/**
+	 * assegna un valore a tutti gli attributi della classe madre WeatherParser 
+	 * prendendoli dal jsonObject passato come parametro
+	 * @param obj the json object
+	 */
 	
 	
 	public void Setall(JSONObject obj) {
 		this.setTimeUNIX((Long) obj.get("dt"));
 		this.setDate(Dataformatter());
-		this.setPression((Double)Double.parseDouble(obj.getString("pressure").toString()));
+		this.setPression((Double)Double.parseDouble(obj.get("pressure").toString()));
 	}
 	 public JSONObject formatter() {
 		 JSONObject json=new JSONObject();
