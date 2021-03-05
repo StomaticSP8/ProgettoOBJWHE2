@@ -88,6 +88,12 @@ public class AttualWheater {
 		this.setDate(Dataformatter());
 		this.setPression((Double)Double.parseDouble(obj.get("pressure").toString()));
 	}
+	
+	/**
+	 * formattatore un json object relativo al dataset
+	 * @return JSONObject
+	 */
+	@SuppressWarnings("unchecked")
 	 public JSONObject formatter() {
 		 JSONObject json=new JSONObject();
 		 json.put("city", this.city);
